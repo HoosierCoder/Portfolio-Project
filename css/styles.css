@@ -85,7 +85,7 @@ p {
   display: flex;
 }
 
-.logo {
+.avi {
   padding-left: 50px;
   padding-top: 20px;
 }
@@ -126,7 +126,7 @@ p {
   text-align: center; }
 
 @media screen and (max-width: 550px) {
-  .logo {
+  .avi {
     width: 100%;
     text-align: center;
     padding-left: 8px;
