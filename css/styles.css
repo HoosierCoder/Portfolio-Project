@@ -1,0 +1,177 @@
+/*
+Dennis Johns
+Style.css
+Style sheet for the Portfolio project for
+Ucacity's Full Stack Developer course.
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body  {
+  background-color: #fff;
+  font-family: "Lobster", sans-serif;
+  color: #4f4f4f;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Signika", sans-serif;
+  text-transform: uppercase;
+}
+
+/*change color of H2 text*/
+h2{
+  color: #7d97a;
+}
+/*want h4 to show different color and in italics*/
+h4{
+  font-style: italic;
+  color: #6433FF;
+}
+h1 {
+    color: #7c777c;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+/*wanted the a links to mostly be same color*/
+a:visited,
+a:link,
+a:active {
+  color: #6433FF;
+  text-decoration: underline;
+}
+
+/*when mouse hovers over link will show hotpink*/
+a:hover{
+  color: hotpink;
+}
+
+p {
+  text-align: center;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.flexrow {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.midcol {
+    width: 50%;
+}
+
+.wholecol {
+    width: 100%;
+}
+
+.flexheader {
+  display: flex;
+}
+
+.logo {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.main-title {
+  width: 50%;
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: 30px;
+  padding-bottom: 15px;
+}
+
+.portfolio {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.featured-work {
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.project {
+  margin: 10px;
+}
+
+.project-img {
+  max-width: 100%;
+}
+
+.footer {
+  border-top: 1px solid #bbb;
+  padding: 6px 0 20px;
+  text-align: center; }
+
+@media screen and (max-width: 550px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+    padding-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 1.5em
+  }
+
+  .main-title {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 2em;
+  }
+
+  p,
+  a {
+    font-size: 1.75rem;
+  }
+
+  .midcol {
+    width: 100%;
+  }
+
+  .portfolio {
+    flex-flow: wrap column;
+  }
+
+  .project {
+    max-width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .project-img {
+    max-width: 100%;
+  }
+
+}
